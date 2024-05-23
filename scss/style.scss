@@ -1,0 +1,415 @@
+$bodyBgColor: #F7F7F7;
+$red: red;
+$blue: blue;
+$white: white;
+$gray: gray;
+$pink: pink;
+$purple: purple;
+$orange: orange;
+$black: black;
+$green: green;
+$chocolate: chocolate;
+$darkgreen: darkgreen;
+$aquamarine: aquamarine;
+$crimson: crimson;
+$gold: gold;
+$coral: coral;
+$display-inline-block: inline-block;
+$display-flex: flex;
+$display-block: block;
+$fontweightbold: bold;
+$size5px: 5px;
+$size12px: 12px;
+$size20px: 20px;
+$size30px: 30px;
+$size50px: 50px;
+$size100px: 100px;
+$size150px: 150px;
+$size200px: 200px;
+$size250px: 250px;
+$size300px: 300px;
+$size800px: 800px;
+$size-08em: 0.8em;
+$size-12em: 1.2em;
+$size-16em: 1.6em;
+$size-2em: 2em;
+$size-22em: 2.2em;
+$size-27em: 2.7em;
+$size-3em: 3em;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
+$font-weight-bold: bold;
+$no-padding: 0;
+$no-margin: 0;
+$margin-top-bottom-2px: 2px;
+$oneHundred-percent: 100%;
+$fifty-percent: 50%;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: $font-weight-400;
+  font-size: $size-12em;
+  padding: $no-padding;
+  margin: $no-margin;
+  background-color: $bodyBgColor;
+}
+
+h1{
+  font-size: $size-3em;
+  font-weight: $font-weight-700;
+  margin: $margin-top-bottom-2px $no-margin;
+}
+
+h2{
+  font-size: $size-27em;
+  font-weight: $font-weight-600;
+  margin: $margin-top-bottom-2px $no-margin;
+}
+
+h3{
+  font-size: $size-22em;
+  font-weight: $font-weight-500;
+  margin: $margin-top-bottom-2px $no-margin;
+}
+
+h4{
+  font-size: $size-16em;
+  font-weight: $font-weight-500;
+  margin: $margin-top-bottom-2px $no-margin;
+}
+
+h5{
+  font-size: $size-12em;
+  font-weight: $font-weight-500;
+  margin: $margin-top-bottom-2px $no-margin;
+}
+
+h6{
+  font-size: $size-08em;
+  font-weight: $font-weight-500;
+  margin: $margin-top-bottom-2px $no-margin;
+}
+
+.red{
+  color: $red;
+}
+
+.blue{
+  color: $blue;
+}
+
+.white{
+  color: $white;
+}
+
+.green{
+  color: $green;
+}
+
+.orange{
+  color: $orange;
+}
+
+.purple{
+  color: $purple;
+}
+
+.pink{
+  color: $pink;
+}
+
+.gray{
+  color: $gray;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+a:hover{
+  color: $red;
+}
+
+a:active{
+  color: $green;
+}
+
+.active{
+  color: $green;
+  font-weight: $font-weight-bold;
+}
+
+.btn{
+background-color: $green;
+color: $white;
+padding: $size20px;
+border-radius: $size5px;
+font-size: $size20px;
+text-transform: uppercase;
+font-weight: $font-weight-bold;
+}
+
+.btn:hover{
+  background-color: $chocolate;
+  color: $black;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navheader{
+  display: flex;
+  width: 1$oneHundred-percent;
+  background-color: $aquamarine;
+  padding: $size20px;
+}
+
+.logoImg img{
+  width: $size150px;
+}
+
+.page_header_item:first-child{
+  width: $size250px;
+  height: $size100px;
+}
+
+.page_header_item:last-child{
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navlist{
+  list-style-type: none;
+}
+
+.navlist li{
+  display: $display-inline-block;
+  margin-right: $size50px;
+  font-size: $size30px;
+}
+
+.divLine{
+  border: 3px solid $green;
+  padding: $size30px;
+  margin-bottom: $size20px;
+}
+
+footer{
+  text-align: center;
+  margin-top: $size50px;
+}
+
+
+.mainHomeDiv{
+  background-color: $white;
+  max-width: $size800px;
+  position: relative;
+  margin: 0 auto;
+  min-height: $size300px;
+  margin-top: $size100px;
+  padding: $size20px;
+}
+
+.mainHomeDiv h1{
+  text-align: center;
+}
+
+.imgProfile{
+  border-radius: $fifty-percent;
+  float: left;
+  margin-right: $size12px;
+  width: $size250px;
+}
+
+.profession{
+  color: $orange;
+  font-weight: 600;
+}
+
+table, th, td{
+  border: 1px solid $black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+thead{
+  background-color: $aquamarine;
+  text-transform: uppercase;
+}
+
+table{
+  width: 100%;
+}
+
+.mainHomeDiv label, input, textarea, button{
+  display: inline-block;
+  width: 100%;
+}
+
+.mainHomeDiv input, textarea, button{
+padding: 20px;
+font-size: 16px;
+margin-bottom: 15px;
+}
+
+.form-left{
+  min-width: 50%;
+}
+
+.form-right{
+  min-width: 50%;
+}
+
+.contactDiv{
+  background-color: $white;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 650px;
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+}
+
+.contactDiv label, input, textarea, button{
+  width: 100%;
+}
+
+.contactDiv input, textarea, button{
+padding: 20px;
+font-size: 16px;
+margin-bottom: 15px;
+}
+
+.clearboth{
+  display: block;
+  clear: both;
+}
+
+main{
+  width: 97vw;
+  display: block;
+  margin: 20px;
+}
+
+.grid__item{
+  display: inline-block;
+  width: 100%;
+  background-color: $white;
+  padding: 10px;
+  min-height: 100%;
+}
+
+.grid{
+  margin: 0 auto;
+}
+
+@supports(display: grid){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid__item:last-child{
+    grid-column: 3/3;
+    grid-row: 1/3;
+  }
+}
+
+/* Mobile Device Responsive Query */
+@media all and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid__item:last-child{
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+
+  h1{
+    font-size: 22px;
+  }
+}
+
+.buttonDiv{
+  margin-top:30px;
+  margin-bottom: 50px;
+}
+
+
+.button{
+  background-color: $darkgreen;
+  color: $white;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  transition-duration: 0.9s;
+  transition-property: opacity;
+}
+
+.button:hover, .button:focus{
+  color: $white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.buttonOrange{
+  background-color: $orange;
+  color: $black;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  transition-duration: 0.9s;
+  transition-property: opacity;
+}
+
+.buttonOrange:hover, .buttonOrange:focus{
+  color: $black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@keyframes color-change{
+0%{
+ fill: $crimson;   
+ transform: translate(45px, 45px);
+ transform: scale(1, 1);
+ transform: rotate(1deg);
+  }
+
+  50%{
+    fill: $coral;   
+    transform: translate(30px, 30px);
+    transform: scale(2, 2);
+    transform: rotate(10deg);
+     }
+
+     100%{
+      fill: $gold;
+      transform: translate(15px, 15px);
+      transform: scale(3, 3);
+      transform: rotate(20deg);
+     }
+}
+
+.sun{
+  animation: 5s color-change infinite alternate linear;
+}
+
+
